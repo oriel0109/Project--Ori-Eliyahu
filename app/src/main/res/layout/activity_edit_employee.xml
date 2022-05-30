@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.MainActivity"
+    tools:ignore="HardcodedText">
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.EditEmployeeActivity"
+        android:orientation="vertical"
+        android:background="@color/back">
+
+
+        <EditText
+            android:id="@+id/eeaEdtName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="שם עובד"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:background="@drawable/edit_edt"/>
+
+        <EditText
+            android:id="@+id/eeaEdtShifts"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="משמרות"
+            android:textSize="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_edt"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:drawableStart="@drawable/information"
+            android:drawablePadding="1dp"
+            />
+
+        <EditText
+            android:id="@+id/eeaEdtPayment"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="תשלום"
+            android:textSize="35dp"
+            android:background="@drawable/edit_edt"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/eeaEdtPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="מספר טלפון"
+            android:layout_gravity="center"
+            android:textSize="35dp"
+            android:background="@drawable/edit_edt"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginTop="40dp"/>
+
+
+
+        <Button
+            android:id="@+id/eeaBtnFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="FinishEdit"
+            android:background="@drawable/round_btn"/>
+
+        <Button
+            android:id="@+id/eeaBtnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:onClick="DeleteEmployee"
+            android:background="@drawable/round_btn"
+            android:visibility="invisible"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_pre" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

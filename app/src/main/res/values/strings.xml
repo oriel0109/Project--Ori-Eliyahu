@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project Ori Eliyahu</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">d3d8lOQDmtnlmmdNEdPSRcjUhBnBW5rvYEeExWn3</string>
+    <string name="back4app_client_key">iXh1PROCYXHncguOmFCcPmPMPmSuknORscSmBZnM</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+</resources>

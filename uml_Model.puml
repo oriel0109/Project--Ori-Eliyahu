@@ -1,0 +1,59 @@
+@startuml
+class com.example.projectorieliyahu.Model.Product {
+- String name
+- double quantity
+- String img
++ String getName()
++ void setName(String)
++ double getQuantity()
++ void setQuantity(double)
++ String getImg()
++ void setImg(String)
+}
+class com.example.projectorieliyahu.Model.Manager {
+- String name
+- String phone
+- String email
+- String id
+- String pass
+- String nameBak
++ String getName()
++ void setName(String)
++ String getPhone()
++ void setPhone(String)
++ String getEmail()
++ void setEmail(String)
++ String getId()
++ void setId(String)
++ String getPass()
++ void setPass(String)
++ String getNameBak()
++ void setNameBak(String)
+}
+class com.example.projectorieliyahu.Model.BitmapHelper {
++ {static} String BitMaptoByte(Bitmap)
++ {static} Bitmap DecodeBase64(String)
+}
+class com.example.projectorieliyahu.Model.Employee {
+- String name
+- String phone
+- double payment
+- int[] shifts
++ double SumOfHours()
++ String ShowShifts()
++ String getName()
++ void setName(String)
++ double getPayment()
++ void setPayment(double)
++ int[] getShifts()
++ void setShifts(int[])
++ String getPhone()
++ void setPhone(String)
++ String toString()
+}
+
+
+java.io.Serializable <|.. com.example.projectorieliyahu.Model.Product
+java.io.Serializable <|.. com.example.projectorieliyahu.Model.Manager
+java.io.Serializable <|.. com.example.projectorieliyahu.Model.Employee
+@enduml

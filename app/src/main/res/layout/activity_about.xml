@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activities.MainActivity"
+    tools:ignore="HardcodedText">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back">
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.AboutActivity"
+        android:orientation="vertical"
+        android:background="@color/back">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="האפליקציה שלי מיועדת לבעל עסק- מאפייה, שיוכל לנהל אותה בקלות רבה יותר.
+
+הרקע לבניית האפליקציה היה מהיכרותי כעובד במאפייה ואי הנוחות בניהולה.
+
+האפליקציה שלי מאפשרת הירשמות כמנהל מאפייה והתחברות למשתמש של מאפיה מסוימת.
+בעת הרישום יידרש מבעל המאפיה להכניס פרטים על העסק בניהם מייל על מנת לאפשר איפוס סיסמה בעת הצורך
+
+למשתמש אשר התחבר כמנהל תהיה אפשרות לנהל את רשימת העובדים ואת רשימת המוצרים (הוספה, מחיקה ועדכון).
+
+ברשימת העובדים יהיה ניתן לקבוע את המשמרות לשבוע הקרוב עבור כל עובד, הצגת השעות שעובד עבד בחודש וחישוב המשכורת החודשית.
+
+רשימת המוצרים תכיל פירוט עבור מלאי המוצר, למנהל יש אופציה להוסיף מוצר חסר, קביעת מלאי המוצר והוספת תמונה שלו, ניתן יהיה לערוך מתוך הרשימה את המוצרים (עריכת מוצר ומחיקתו).
+
+האפליקציה תאפשר שליחת הודעה מתוך רשימה מוגדרת עבור העובדים לפי הצורך.
+
+
+במהלך כל האפליקציה המשתמש יוכל לנווט את עצמו בקלות באמצעות תפריטים וממשק נוח וידידותי למשתמש.
+
+
+ "
+            android:textSize="20dp"
+            android:padding="15dp"/>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_pre" />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

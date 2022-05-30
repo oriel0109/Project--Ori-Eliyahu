@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectorieliyahu">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@color/back"
+        android:label="@string/app_name"
+        android:roundIcon="@color/back"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectOriEliyahu"
+        >
+        <activity
+            android:name=".Activities.PreMenu"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar"
+           />
+
+        <receiver
+            android:name=".BroadcastReceiver.NetworkChangerReciever"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activities.SendMessageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditEmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmployeeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
